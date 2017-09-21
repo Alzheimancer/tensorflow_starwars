@@ -12,7 +12,6 @@ Download docker image file [tensorflow/tensorflow](https://hub.docker.com/r/tens
 * docker pull tensorflow/tensorflow
 
 #### Build the Docker image locally
-cd tensorflow_starwars \
 docker run -it -p 8888:8888 -v "$(PWD)"/tensorflow_starwars:/notebooks/sharedfolder tensorflow/tensorflow bash
 
 ## Alternative (Windows)

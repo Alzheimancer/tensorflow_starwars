@@ -27,6 +27,6 @@ python -m scripts.retrain \
   --image_dir=tf_files/star_wars
 
 #### Testing script
-python -m scripts.starwars_class [\]\
+python -m scripts.starwars_class \\ \
 --graph=tf_files/retrained_graph.pb  \
 --image=tf_files/star_wars/vader/pic_013.jpg

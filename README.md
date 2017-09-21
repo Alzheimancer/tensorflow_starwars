@@ -33,5 +33,5 @@ python -m scripts.retrain \
 
 #### Testing script
 python -m scripts.starwars_class \
-image=tf_files/star_wars/vader/pic_013.jpg
+tf_files/star_wars/vader/pic_013.jpg
 

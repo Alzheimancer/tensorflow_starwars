@@ -26,12 +26,7 @@ python -m scripts.retrain \
   --output_labels=tf_files/retrained_labels.txt \
   --image_dir=tf_files/star_wars
 
-##### Result
-	INFO:tensorflow:Final test accuracy = 96.1% (N=51)
-	INFO:tensorflow:Froze 2 variables.
-	Converted 2 variables to const ops.
-
 #### Testing script
-python -m scripts.starwars_class \
+python -m scripts.starwars_class [\]\
 --graph=tf_files/retrained_graph.pb  \
 --image=tf_files/star_wars/vader/pic_013.jpg

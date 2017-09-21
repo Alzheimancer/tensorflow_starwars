@@ -2,6 +2,8 @@
 Image Classification workshop for Machine Learning CS532 Lecture on September 21 at KMUTT.
 Use this [CodeLab](https://codelabs.developers.google.com/codelabs/tensorflow-for-poets/?utm_campaign=chrome_series_machinelearning_063016&utm_source=gdev&utm_medium=yt-desc#0) by Google as a guide. Also this [tutorial](https://www.tensorflow.org/versions/r0.9/how_tos/image_retraining/index.html) is quite helpful.
 
+![maxresdefault](https://user-images.githubusercontent.com/28506207/30697140-242e8178-9f08-11e7-93a6-f93b47c28e22.jpg)
+
 ## Requirements
 
 * [docker](https://www.docker.com/products/docker-toolbox)

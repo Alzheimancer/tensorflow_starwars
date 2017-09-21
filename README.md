@@ -6,7 +6,7 @@ Use this [CodeLab](https://codelabs.developers.google.com/codelabs/tensorflow-fo
 
 * [docker](https://www.docker.com/products/docker-toolbox)
 
-Download docker image file[tensorflow/tensorflow](https://hub.docker.com/r/tensorflow/tensorflow/).
+Download docker image file [tensorflow/tensorflow](https://hub.docker.com/r/tensorflow/tensorflow/).
 * docker pull tensorflow/tensorflow
 
 #### Build the Docker image locally

@@ -17,7 +17,7 @@ docker run -it -p 8888:8888 -v "$(PWD)"/tensorflow_starwars:/notebooks/sharedfol
 ## Alternative (Windows)
 You'll need Python 2.7 or Python 3.6 to run this code. You'll also need to install tensorflow library with pip.
 
-#### Training script
+#### Training a model
 Using bash command train.sh or python command below \
 python -m scripts.retrain \\ \
   --bottleneck_dir=tf_files/bottlenecks \\ \
@@ -27,7 +27,7 @@ python -m scripts.retrain \\ \
   --output_labels=tf_files/retrained_labels.txt \\ \
   --image_dir=tf_files/star_wars
 
-#### Testing script
+#### Testing a model
 python -m scripts.starwars_class \\ \
 --graph=tf_files/retrained_graph.pb  \\ \
 --image=tf_files/star_wars/vader/pic_013.jpg

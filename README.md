@@ -9,10 +9,14 @@ Use this [CodeLab](https://codelabs.developers.google.com/codelabs/tensorflow-fo
 * [docker](https://www.docker.com/products/docker-toolbox)
 
 Download docker image file [tensorflow/tensorflow](https://hub.docker.com/r/tensorflow/tensorflow/).
-* docker pull tensorflow/tensorflow
+```shell
+$ docker pull tensorflow/tensorflow
+```
 
 #### Build the Docker image locally
-docker run -it -p 6006:6006 -v "$(PWD)"/tensorflow_starwars:/notebooks/sharedfolder tensorflow/tensorflow bash
+```shell
+$ docker run -it -p 6006:6006 -v "$(PWD)"/tensorflow_starwars:/notebooks/sharedfolder tensorflow/tensorflow bash
+```
 
 ## Alternative (Windows)
 You'll need Python 2.7 or Python 3.6 to run this code. You'll also need to install tensorflow library with pip.

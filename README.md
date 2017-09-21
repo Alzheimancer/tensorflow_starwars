@@ -10,8 +10,8 @@ Download docker image file[tensorflow/tensorflow](https://hub.docker.com/r/tenso
 * docker pull tensorflow/tensorflow
 
 #### Build the Docker image locally
-
-docker run -it -p 8888:8888 -v "$(PWD)"/demo_tensorflow:/notebooks/sharedfolder tensorflow/tensorflow bash
+cd tensorflow_starwars
+docker run -it -p 8888:8888 -v "$(PWD)":/notebooks/sharedfolder tensorflow/tensorflow bash
 
 ## Alternative (Windows)
 You'll need Python 2.7 or Python 3.6 to run this code. You'll also need to install tensorflow library with pip.

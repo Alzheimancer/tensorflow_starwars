@@ -1,3 +1,5 @@
+TRAIN_DIR=/tmp/train_logs \
+
 python -m scripts.retrain \
 --bottleneck_dir=tf_files/bottlenecks \
 --how_many_training_steps=500 \

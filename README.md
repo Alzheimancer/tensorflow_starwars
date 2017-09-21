@@ -32,6 +32,5 @@ python -m scripts.retrain \
 	Converted 2 variables to const ops.
 
 #### Testing script
-python -m scripts.starwars_class \
-tf_files/star_wars/vader/pic_013.jpg
+python -m scripts.starwars_class tf_files/star_wars/vader/pic_013.jpg
 

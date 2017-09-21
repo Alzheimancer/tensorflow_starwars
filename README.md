@@ -21,7 +21,7 @@ You'll need Python 2.7 or Python 3.6 to run this code. You'll also need to insta
 Using bash command train.sh or python command below \
 python -m scripts.retrain \\ \
   --bottleneck_dir=tf_files/bottlenecks \\ \
-  --how_many_training_steps=100 \\ \
+  --how_many_training_steps=500 \\ \
   --model_dir=tf_files/models/ \\ \
   --output_graph=tf_files/retrained_graph.pb \\ \
   --output_labels=tf_files/retrained_labels.txt \\ \

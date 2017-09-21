@@ -1,15 +1,25 @@
 import tensorflow as tf
 import sys
+import argparse
 
 # change this as you see fit
-image_path = sys.argv[1]
+#image_path = sys.argv[1]
+file_name = '' 
+parser = argparse.ArgumentParser()
+parser.add_argument("--image", help="image to be processed")
+parser.add_argument("--graph", help="graph/model to be executed")
+args = parser.parse_args()
 
+if args.graph:
+    model_file = args.graph
+if args.image:
+    file_name = args.image
+ 
 # Read in the image_data
-image_data = tf.gfile.FastGFile(image_path, 'rb').read()
+image_data = tf.gfile.FastGFile(file_name, 'rb').read()
 
 # Loads label file, strips off carriage return
-label_lines = [line.rstrip() for line 
-                   in tf.gfile.GFile("tf_files/retrained_labels.txt")]
+label_lines = [line.rstrip() for line in tf.gfile.GFile("tf_files/retrained_labels.txt")]
 
 # Unpersists graph from file
 with tf.gfile.FastGFile("tf_files/retrained_graph.pb", 'rb') as f:

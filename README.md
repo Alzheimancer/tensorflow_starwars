@@ -25,14 +25,14 @@ You'll need Python 2.7 or Python 3.6 to run this code. You'll also need to insta
 Using bash command train.sh or python command below \
 
 ```shell
-$ TRAIN_DIR=/tmp/train_logs
 $ python -m scripts.retrain \
   --bottleneck_dir=tf_files/bottlenecks \
   --how_many_training_steps=500 \
   --model_dir=tf_files/models/ \
   --output_graph=tf_files/retrained_graph.pb \
   --output_labels=tf_files/retrained_labels.txt \
-  --image_dir=tf_files/star_wars
+  --image_dir=tf_files/star_wars \
+  --summaries_dir=tmp/train_logs
 ```
 
 #### Testing a model
@@ -48,6 +48,6 @@ To visualize the losses and other metrics during training, you can use
 by running the command below.
 
 ```shell
-tensorboard --logdir=${TRAIN_DIR}
+tensorboard --logdir=tmp/train_logs
 ```
 

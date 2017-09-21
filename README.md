@@ -12,22 +12,38 @@ Download docker image file [tensorflow/tensorflow](https://hub.docker.com/r/tens
 * docker pull tensorflow/tensorflow
 
 #### Build the Docker image locally
-docker run -it -p 8888:8888 -v "$(PWD)"/tensorflow_starwars:/notebooks/sharedfolder tensorflow/tensorflow bash
+docker run -it -p 6006:6006 -v "$(PWD)"/tensorflow_starwars:/notebooks/sharedfolder tensorflow/tensorflow bash
 
 ## Alternative (Windows)
 You'll need Python 2.7 or Python 3.6 to run this code. You'll also need to install tensorflow library with pip.
 
 #### Training a model
 Using bash command train.sh or python command below \
-python -m scripts.retrain \\ \
+
+```shell
+$ TRAIN_DIR=/tmp/train_logs \
+$ python -m scripts.retrain \\ \
   --bottleneck_dir=tf_files/bottlenecks \\ \
   --how_many_training_steps=500 \\ \
   --model_dir=tf_files/models/ \\ \
   --output_graph=tf_files/retrained_graph.pb \\ \
   --output_labels=tf_files/retrained_labels.txt \\ \
   --image_dir=tf_files/star_wars
+```
 
 #### Testing a model
-python -m scripts.starwars_class \\ \
+```shell
+$python -m scripts.starwars_class \\ \
 --graph=tf_files/retrained_graph.pb  \\ \
 --image=tf_files/star_wars/vader/pic_013.jpg
+```
+#### TensorBoard
+
+To visualize the losses and other metrics during training, you can use
+[TensorBoard](https://github.com/tensorflow/tensorboard)
+by running the command below.
+
+```shell
+tensorboard --logdir=${TRAIN_DIR}
+```
+

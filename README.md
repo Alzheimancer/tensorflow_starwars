@@ -25,7 +25,7 @@ You'll need Python 2.7 or Python 3.6 to run this code. You'll also need to insta
 Using bash command train.sh or python command below \
 
 ```shell
-$ TRAIN_DIR=/tmp/train_logs \
+$ TRAIN_DIR=/tmp/train_logs
 $ python -m scripts.retrain \
   --bottleneck_dir=tf_files/bottlenecks \
   --how_many_training_steps=500 \

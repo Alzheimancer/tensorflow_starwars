@@ -7,6 +7,7 @@ Use this [CodeLab](https://codelabs.developers.google.com/codelabs/tensorflow-fo
 ## Requirements
 
 * [docker](https://www.docker.com/products/docker-toolbox)
+* [fatkun batch download image](https://chrome.google.com/webstore/detail/fatkun-batch-download-ima/nnjjahlikiabnchcpehcpkdeckfgnohf?hl=en)
 
 Download docker image file [tensorflow/tensorflow](https://hub.docker.com/r/tensorflow/tensorflow/).
 ```shell
@@ -50,4 +51,3 @@ by running the command below.
 ```shell
 tensorboard --logdir=tmp/train_logs
 ```
-

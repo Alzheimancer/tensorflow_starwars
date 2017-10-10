@@ -22,6 +22,7 @@ $ docker run -it -p 6006:6006 -v "$(PWD)"/tensorflow_starwars:/notebooks/sharedf
 ## Alternative (Windows)
 You'll need Python 2.7 or Python 3.6 to run this code. You'll also need to install tensorflow library with pip.
 
+## How to use
 #### Training a model
 Using bash command train.sh or python command below \
 
